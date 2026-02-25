@@ -1,10 +1,10 @@
-# 🌦️ Weather Data System
+Weather Data System
 
 A Spring Boot + MongoDB application that ingests historical weather data from CSV and exposes REST APIs for querying and analytics.
 
 
 
-* Java 17+
+* Java 21+
 * Spring Boot
 * Spring Data MongoDB
 * OpenCSV
@@ -14,8 +14,8 @@ A Spring Boot + MongoDB application that ingests historical weather data from CS
 Base URL
 http://localhost:8077/api/weather
 
-# 🧪 API Endpoints
-## 📥 1. Upload CSV
+# API Endpoints
+1. Upload CSV
 
 Uploads and ingests the weather dataset into MongoDB.
 
@@ -40,7 +40,7 @@ CSV imported successfully
 
 ---
 
-## 📊 2. Get All Weather Data
+2. Get All Weather Data
 
 Retrieves all stored weather records.
 
@@ -56,7 +56,7 @@ Returns complete weather documents from MongoDB.
 
 ---
 
-## 🔍 3. Filter by Weather Condition
+3. Filter by Weather Condition
 
 Retrieves weather data for a specific condition (case-insensitive).
 
@@ -79,7 +79,7 @@ GET /api/weather/condition/smoke
 
 ---
 
-## 📅 4. Weather Details by Month ✅
+4. Weather Details by Month ✅
 
 Returns weather condition, temperature, humidity, and pressure for a given month.
 
@@ -104,7 +104,7 @@ GET /api/weather/month?year=1996&month=11
 
 ---
 
-## 📆 5. Weather Details by Date
+5. Weather Details by Date
 
 Returns weather summary for a specific date.
 
@@ -128,7 +128,7 @@ GET /api/weather/date?year=1996&month=11&day=01
 
 ---
 
-## 📊 6. Monthly Temperature Statistics ⭐
+6. Monthly Temperature Statistics ⭐
 
 Provides high, minimum, and median temperature for each month of a given year.
 
